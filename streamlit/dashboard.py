@@ -7,7 +7,7 @@ from babel.numbers import format_currency
 sns.set(style="dark")
 
 # load data
-data = pd.read_csv("data_main.csv")
+data = pd.read_csv("https://github.com/agungdiah/E-Commerce/blob/master/streamlit/data_main.csv")
 
 st.header('Olist Store Dashboard')
 
