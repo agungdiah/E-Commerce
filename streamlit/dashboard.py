@@ -35,8 +35,8 @@ def create_rfm_seller(df):
     })
 
     rfm_df_seller.columns = ["seller_id", "max_sell_timestamp", "frequency", "monetary"]
-
-    rfm_df_seller["max_sell_timestamp"] = rfm_df_seller["max_sell_timestamp"].dt.date
+    
+    rfm_df_seller["max_sell_timestamp"] = pd.to_datetime(rfm_df_seller["max_sell_timestamp"])
     recent_date = data["order_approved_at"].dt.date.max()
     rfm_df_seller["recency"] = rfm_df_seller["max_sell_timestamp"].apply(lambda x: (recent_date - x).days)
     rfm_df_seller.drop("max_sell_timestamp", axis=1, inplace=True)
