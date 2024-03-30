@@ -144,8 +144,10 @@ with col2:
     
     st.pyplot(fig)
 
-st.text("Pada tahun 2017 total orders dan total revenue cenderung mengalami peningkatan setiap bulannya, peningkatan tertinggi berada pada bulan November. Namun di bulan Desember total orders dan total revenue mengalami penurunan tajam")
-
+st.text_area(
+    "Pada tahun 2017 total orders dan total revenue cenderung mengalami peningkatan setiap bulannya, 
+    peningkatan tertinggi berada pada bulan November. Namun di bulan Desember total orders dan total 
+    revenue mengalami penurunan tajam")
 
 # visualisasi produk
 st.subheader("Best & Worst Performing Product")
