@@ -5,7 +5,6 @@ import seaborn as sns
 import streamlit as st
 from babel.numbers import format_currency
 
-[theme]
 base="dark"
 primaryColor="purple"
 
