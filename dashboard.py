@@ -5,17 +5,9 @@ import seaborn as sns
 import streamlit as st
 from babel.numbers import format_currency
 
-st.markdown(
-    """
-    <style>
-    body {
-        color: white;
-        background-color: #121212;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+[theme]
+base="dark"
+primaryColor="purple"
 
 # load data
 data = pd.read_csv("data_main.csv")
