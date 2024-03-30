@@ -5,6 +5,9 @@ import seaborn as sns
 import streamlit as st
 from babel.numbers import format_currency
 
+# Set Streamlit theme to dark mode
+st.set_page_config(layout="wide", page_title="Your App Title", page_icon="🚀", theme="dark")
+
 st.markdown(
     """
     <style>
