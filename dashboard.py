@@ -144,6 +144,9 @@ with col2:
     
     st.pyplot(fig)
 
+st.text("Test")
+
+
 # visualisasi produk
 st.subheader("Best & Worst Performing Product")
 
