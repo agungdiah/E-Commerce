@@ -4,7 +4,18 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 from babel.numbers import format_currency
-sns.set(style="dark")
+
+st.markdown(
+    """
+    <style>
+    body {
+        color: white;
+        background-color: #121212;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 # load data
 data = pd.read_csv("data_main.csv")
